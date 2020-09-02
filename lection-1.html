@@ -46,6 +46,7 @@
 
 - [Что такое интеллектуальные системы](#3)
 - [Виды интеллекутальных систем](#4)
+- [Системы представления знаний](#5)
 </script></section><section ><section data-markdown><script type="text/template">
 ## Что такое интеллектуальные системы
 
@@ -145,7 +146,79 @@
 - Нейронные сети
 - Эволюционные методы
 - Нечеткая логика и нечеткие множества
-</script></section></section></div>
+</script></section></section><section ><section data-markdown><script type="text/template">
+## Системы представления знаний
+
+Данные - информация, полученная в результате наблюдений или измерений отдельных свойств (атрибутов), характеризующих объекты, процессы и явления предметной области.
+
+Знания (с точки зрения ИС) - это связи и закономерности предметной области (модели, принципы, законы), полученные в результате практической деятельности и профессионального опыта, позволяющего специалистам ставить и решать задачи в данной области
+</script></section><section data-markdown><script type="text/template">
+### Свойства знаний
+
+- внутренняя интерпретируемость
+- структурированность
+- связность
+- семантическая метрика (ситуационная близость)
+- активность
+</script></section><section data-markdown><script type="text/template">
+### Фреймы
+
+Фрейм - единица представления знаний, запомненных в прошлом, детали которой могут быть изменены согласно текущей ситуации.
+
+```
+(frame СТОЛ
+     (purpose (value(размещение предметов для
+       деятельности рук)))
+     (type (value(письменный)))
+     (colour (value (коричневый))))
+```
+
+[Frame Representaiton Language](https://www.csee.umbc.edu/courses/771/current/presentations/frames.pdf)
+
+</script></section><section data-markdown><script type="text/template">
+```
+(frame (name (Cube))
+    (isa (Block World))
+    (length (NULL))
+    (width (IF-DEFAULT (use length)))    
+    (height (IF-DEFAULT (use length))))    
+ (frame (name (B1))      
+   (isa (Cube))    
+   (color (red))    
+   (length (80)))    
+ (frame (name (B2))       
+   (isa (Cube))    
+   (color (green))    
+   (length (65))    
+   (who_put (value (NULL))    
+      (IF_NEEDED (askuser))))
+```
+</script></section><section data-markdown><script type="text/template">
+```
+(object ? X       
+    (color (yellow))   
+    (hold ? Y    
+       (type (pyramid))))
+//---
+(frame (name (B3))    
+    (type (block))
+    (color (yellow))
+    (size (20 20 20))
+    (coordinate (20 50 0))
+    (hold (P2)))
+```
+</script></section><section data-markdown><script type="text/template">
+### Исчисления предикатов
+
+Формальный язык для представления отношений в некоторой предметной области.
+
+Основное преимущество - хорошо понятный мощный механизм автоматического вывода.
+</script></section><section data-markdown><script type="text/template">
+У каждого человека есть отец.
+
+\[\begin{aligned}
+\forall x \exists y (человек(x) \rightarrow отец(y, x))
+\end{aligned} \]</script></section></section></div>
     </div>
 
     <script src="./dist/reveal.js"></script>
