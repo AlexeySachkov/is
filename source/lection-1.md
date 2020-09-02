@@ -1,6 +1,12 @@
 <style type="text/css">
 .reveal h1 {
-  font-size: 1.7em !important;
+  font-size: 1.8em !important;
+}
+.reveal h2 {
+  font-size: 1.5em !important;
+}
+.reveal .slides {
+  text-align: left !important;
 }
 </style>
 
@@ -37,7 +43,7 @@
 
 ## Что такое интеллектуальные системы
 
-<div style="font-size: 28px">
+<div style="font-size: 28px;">
 Некая автоматизированная система, осуществляющая поддержку деятельности человека "интеллектуальнее", чем простой алгоритм решения конкретной задачи.
 
 "интеллектуальность" включает в себя:
