@@ -148,9 +148,9 @@
 - Нечеткая логика и нечеткие множества
 </script></section></section><section ><section data-markdown><script type="text/template">
 ## Системы представления знаний
-
+</script></section><section data-markdown><script type="text/template">
 Данные - информация, полученная в результате наблюдений или измерений отдельных свойств (атрибутов), характеризующих объекты, процессы и явления предметной области.
-
+</script></section><section data-markdown><script type="text/template">
 Знания (с точки зрения ИС) - это связи и закономерности предметной области (модели, принципы, законы), полученные в результате практической деятельности и профессионального опыта, позволяющего специалистам ставить и решать задачи в данной области
 </script></section><section data-markdown><script type="text/template">
 ### Свойства знаний
@@ -216,9 +216,15 @@
 </script></section><section data-markdown><script type="text/template">
 У каждого человека есть отец.
 
-\[\begin{aligned}
+\begin{aligned}
 \forall x \exists y (человек(x) \rightarrow отец(y, x))
-\end{aligned} \]</script></section></section></div>
+\end{aligned}
+
+Джон владеет красной машиной.
+
+\begin{aligned}
+\exists x (владеет(Джон, x) \rightarrow машина(x) \wedge красный(x))
+\end{aligned}</script></section></section></div>
     </div>
 
     <script src="./dist/reveal.js"></script>
