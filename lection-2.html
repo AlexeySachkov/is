@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>reveal-md</title>
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./dist/theme/white.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/github.css" />
+    <link rel="stylesheet" href="./_assets/assets/css/layout.css" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"><style type="text/css">
+.reveal h1 {
+  font-size: 2em;
+}
+</style>
+
+# Интеллектуальные системы и технологии
+</script></section><section  data-markdown><script type="text/template">
+## Содержание
+
+- [Экспертные системы](#3)
+- [Сложности и принципы построения ЭС](#4)
+- [Примеры экспертных систем](#5)
+- [Введение в Prolog](#6)
+</script></section><section ><section data-markdown><script type="text/template">
+## Экспертные системы
+
+Системы, способные заменить специалиста-эксперта в разрешении проблемной ситуации.
+</script></section><section data-markdown><script type="text/template">
+Мощность экспертной системы в первую очередь обусловлена мощностью базы знаний и только во вторую очередь используемыми методами решения задач.
+</script></section><section data-markdown><script type="text/template">
+![image](https://studfile.net/html/2706/327/html_reBMao78oU.pzIi/img-tUe5iJ.png)
+</script></section><section data-markdown><script type="text/template">
+### Классификация ЭС
+
+#### По назначению:
+
+- Общего назначения
+- Специализированные
+</script></section><section data-markdown><script type="text/template">
+#### По степени зависимости от внешней среды:
+
+- Статические
+- Динамические
+</script></section><section data-markdown><script type="text/template">
+#### По типу использования:
+
+- Изолированные
+- На входе/выходе других систем
+- Гибридные/интегрированные
+</script></section><section data-markdown><script type="text/template">
+#### По сложности решаемых задач:
+
+- Простые: до 1000 простых правил
+- Средние: от 1000 до 10 000 структурированных правил
+- Сложные: более 10 000 структурированных правил
+</script></section><section data-markdown><script type="text/template">
+#### По стадии создания:
+
+- Исследовательский образец: 1-2 месяца, минимальная БЗ
+- Демонстрационный образец: 2-4 месяца
+- Промышленный образц: 4-8 месяцев, полная БЗ
+- Коммерческий образец: 1.5-2 года, полная БЗ
+</script></section></section><section ><section data-markdown><script type="text/template">
+## Сложности и этапы построения ЭС
+</script></section><section data-markdown><script type="text/template">
+### Этапы построения ЭС
+
+- Идентификация проблем
+- Извлечение знаний
+- Структурирование знаний
+- Формализация
+- Реализация ЭС
+- Тестирование
+</script></section><section data-markdown><script type="text/template">
+### Пример
+
+ЭС для диагностирования неисправностив некотором приборе.
+
+Прибор может быть исправен или нет, работоспособен или нет.
+
+Возможные неисправности:
+- обрыв связи
+- замыкание проводников
+- неправильное функционирование элементов
+</script></section><section data-markdown><script type="text/template">
+Разные неисправности проявляются в виде разных значений информационных параметров и комбинация значений этих параметров составляет _информационный образ_ неисправности.
+
+Если информационный образ полный - диагноз поставленный системой точный, если нет - вероятностный.
+</script></section><section data-markdown><script type="text/template">
+Эксперт с помощью инженера должен выполнить следующее:
+- выделить множество всех неисправностей
+- выделить множество существенных параметров
+- выделить информативные значения (или диапазоны значений) для существенных параметров
+</script></section><section data-markdown><script type="text/template">
+- если ярко горит индикатор 2, 0.95 вероятность неисправности блока А1
+- если не горит индикатор 2, но моргает индикатор 1, 0.8 вероятность неисправности блока А2
+
+## Примеры экспертных систем
+</script></section><section data-markdown><script type="text/template">
+### MYCIN
+
+Экспертная система для диагностирования бактерий, вызывающих тяжелые инфеции (такие как баетериемия и менингит), а также для рекомендации необходимого количества антибиотиков в зависимости от массы тела пациента.
+
+MYCIN - суффикс, часто встречающийся в названиях антибиотиков.
+</script></section><section data-markdown><script type="text/template">
+Разрабатывалась 5-6 лет в начале 1970-х в Стенфордском университете.
+
+Являет собой машину вывода из ~600 правил.
+</script></section><section data-markdown><script type="text/template">
+После запуска, MYCIN задает пользователю (врачу) длинный ряд простых да/нет или текстовых вопросов.
+
+На выходе получается список подозреваемых бактерий, отсортированный по вероятности, обоснование решения и рекомендованный курс лечения.
+</script></section><section data-markdown><script type="text/template">
+MYCIN предлгает приемлемую терапию в 69% случаев, что лучше, чем у экспертов по инфекционным болезням, которых оценивали по тем же критериям.
+
+Тем не менее, в реальной практике система не использовалась в силу этических и правовых вопросов использования компьютеров в медицине, а также технических проблем.
+</script></section><section data-markdown><script type="text/template">
+#### DENDRAL
+
+Разрабатывалась в Стенфордском университете в 60-х годах для определения топологических структур органических молекул.
+
+Выводт молекулярную структуру химических веществ по данным масс-спектрометрии и ядерного магнитного резонанса
+</script></section><section data-markdown><script type="text/template">
+#### PROSPECTOR
+
+Стенфорд, 1974-1983. Создана для оценки геологами потенциальной рудоносноти района.
+
+Содержит более 1000 правил: сравнивает наблюдения геологов с моделями разного рода залежей руд, вовлекает геолога в диалог для извлечения дополнительной информации.
+
+В 1984 году точно предсказала существование молибденового месторождения, оцененного в многомиллионную сумму.</script></section></section></div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
