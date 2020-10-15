@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>reveal-md</title>
+    <link rel="shortcut icon" href="./favicon.ico"/>
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./dist/theme/white.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/github.css" />
+    <link rel="stylesheet" href="./_assets/assets/css/layout.css" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"><style type="text/css">
+.reveal h1 {
+  font-size: 2em;
+}
+</style>
+
+# Интеллектуальные системы и технологии
+</script></section><section  data-markdown><script type="text/template">
+## Мультиагентные системы
+</script></section><section ><section data-markdown><script type="text/template">
+Система, образованная из нескольких взаимодействующих интеллектуальных агентов.
+</script></section><section data-markdown><script type="text/template">
+### Что такое агент?
+
+Агент это физическая или виртуальная сущность, которая _находясь в определенном окружении_, может действовать _гибко_ и _автономно_ для выполнения имеющихся _целей_.
+</script></section><section data-markdown><script type="text/template">
+### Пример
+
+Имеются набор поставщиков материалов и набор производителей каких-либо деталей.
+
+Каждый производитель должен приобрести определенный набор материалов для своей работы.
+</script></section><section data-markdown><script type="text/template">
+### Ещё примеры агентов
+
+- автономный луноход
+- автономный робот (Spot, Boston Dynamics)
+- автомобиль на автопилоте
+- чат-бот, автоматизированная система торговли
+</script></section><section data-markdown><script type="text/template">
+Поставщики и производители могут быть представлены в виде виртуальных агентов (программ), которые общаются между собой с целью осуществить сделки на наилучших для каждого из них условиях.
+
+### Свойства агентов
+
+- реактивность: способность реагировать на происходящее во внешней среде
+- целеустремленность (проактивность): агенты заняты достижением определенных целей
+- самообучаемость
+- гибкость: агенты способны менять свое поведение в зависимости от внешней среды
+- автономность: ручное управление не требуется
+- коммуникативность: агенты способны взаимодействовать с другими агентами
+</script></section><section data-markdown><script type="text/template">
+### Примеры решаемых задач
+
+- балансировка нагрузки в интернет-сетях и электрических сетях
+- взаимодействие беспилотных летательных аппаратов
+- относительное выравнивание групп спутников
+- управление логистикой
+- моделирование каких-либо реальных ситуаций: боты в играх, поведение водителей на дорогах, поведение людей в торговых центрах
+</script></section></section><section ><section data-markdown><script type="text/template">
+### Особенности мультиагентных систем
+
+При разработке МАС вы не описываете какой-то конкретный алгоритм достижения цели, вместо этого решение получается автоматически в результате взаимодействия множества агентов.
+</script></section><section data-markdown><script type="text/template">
+Каждый агент имеет цели, которые он должен достичь, но не имеет конкретных сценариев их достижения - сценарии формируются агентами самостоятельно и в последстии исполняются.
+</script></section></section></div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
