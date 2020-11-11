@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>reveal-md</title>
+    <link rel="shortcut icon" href="./favicon.ico"/>
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./dist/theme/white.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/github.css" />
+    <link rel="stylesheet" href="./_assets/assets/css/layout.css" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"><style type="text/css">
+.reveal h1 {
+  font-size: 2em;
+}
+.reveal .slides p {
+  text-align: left;
+}
+</style>
+
+# Интеллектуальные системы и технологии
+</script></section><section ><section data-markdown><script type="text/template">
+## Распознавание изображений
+</script></section><section data-markdown><script type="text/template">
+##№ Распознавание образов
+
+Образ - структурируемое описание изучаемого объекта или явления, представленное вектором признаков, каждый элемент которого представляет числовое значение одного из признаков, характеризующих соответствующий объект.
+
+(тонкий, белый, легкий) - лист бумаги
+(толстый, коричневый, тяжелый) - лист картона
+</script></section><section data-markdown><script type="text/template">
+![image](https://intuit.ru/EDI/22_02_16_6/1456093353-18215/tutorial/118/objects/4/files/4_1.gif)
+</script></section><section data-markdown><script type="text/template">
+Суть задачи распознавания - установить, обладают ли изучаемые объекты фиксированным конечным набором признаков, позволяющих отнести их к определенному классу.
+</script></section><section data-markdown><script type="text/template">
+### Особенности задач распознавания
+
+- как правило задача состоит из 2-х этапов: (а) приведение данных к удобному виду, (б) само распознавание
+- можно вводить понятие аналогии или подобия объектов и формулировать понятие близости объектов в качестве основания для зачисления объектов в один и тот же класс или разные классы
+</script></section><section data-markdown><script type="text/template">
+- можно оперировать набором готовых прецендентов-примеров, классификация которых уже известна и которые в виде формализованных описаний могут быть предъявлены алгоритму распознавания для настройки на задачу в процессе обучения
+- трудно строить формальные теории и применять классические математические методы
+- возможна "плохая" информация: пропуски информации, разнородная информация, нечеткая или косвенная информация
+</script></section><section data-markdown><script type="text/template">
+### Типы задач распознавания
+
+- Задача распознавания - отнесение предъявленного объекта по его описанию к одному из заданных классов (обучение с учителем)
+- Задача автоматической классификации - разбиение множества объектов по их описаниям на систему непересекающихся классов
+- Задача выбора информативного набора признаков при классификации
+- Первые две задачи для динамических объектов (видео)
+</script></section></section><section ><section data-markdown><script type="text/template">
+## Основы теории анализа и распознавания образов
+</script></section><section data-markdown><script type="text/template">
+\begin{aligned}
+M - множество объектов
+\Omega - множество классов объектов
+
+M \bigcup \Omega_{i} (i=1..m)
+
+Каждый объект w_{i} задается значениями признаков x_{j} (j=1..N)
+
+I(w)=(x_{1}(w),...,x_{N}(w)) - описание объекта
+\end{aligned}
+
+</script></section><section data-markdown><script type="text/template">
+\begin{aligned}
+
+\end{aligned}
+
+
+
+</script></section></section></div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
