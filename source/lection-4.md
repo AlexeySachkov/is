@@ -67,6 +67,7 @@
 
 \begin{aligned}
 M - множество объектов
+
 \Omega - множество классов объектов
 M \bigcup \Omega_{i} (i=1..m)
 Каждый объект w_{i} задается значениями признаков x_{j} (j=1..N)
@@ -76,9 +77,20 @@ I(w)=(x_{1}(w),...,x_{N}(w)) - описание объекта
 
 ----
 
-\begin{aligned}
-
-\end{aligned}
+\begin{table}[]
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\multirow{2}{*}{объект} & \multicolumn{3}{l|}{признаки и значения} & \multirow{2}{*}{класс}                        \\ \cline{2-4}
+                        & x\_\{1\}     & x\_\{j\}    & x\_\{n\}    &                                               \\ \hline
+w\_\{1\}                & a\_\{11\}    & a\_\{1j\}   & a\_\{1n\}   & \multirow{3}{*}{\textbackslash{}Omega\_\{1\}} \\ \cline{1-4}
+\multicolumn{4}{|l|}{...}                                          &                                               \\ \cline{1-4}
+w\_\{h\}                & a\_\{h1\}    & a\_\{hj\}   & a\_\{hn\}   &                                               \\ \hline
+\multicolumn{5}{|l|}{...}                                                                                          \\ \hline
+w\_\{l\}                & a\_\{l1\}    & a\_\{lj\}   & a\_\{ln\}   & \multirow{3}{*}{\textbackslash{}Omega\_\{M\}} \\ \cline{1-4}
+\multicolumn{4}{|l|}{...}                                          &                                               \\ \cline{1-4}
+w\_\{k\}                & a\_\{k1\}    & a\_\{kj\}   & a\_\{kn\}   &                                               \\ \hline
+\end{tabular}
+\end{table}
 
 
 
