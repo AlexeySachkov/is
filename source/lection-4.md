@@ -66,19 +66,19 @@
 ----
 
 \begin{aligned}
-M - множество объектов \\
+M - множество\:объектов \\
 \end{aligned}
 \begin{aligned}
-\Omega - множество классов объектов \\
+\Omega - множество:классов:объектов \\
 \end{aligned}
 \begin{aligned}
 M \bigcup \Omega_{i} (i=1..m) \\
 \end{aligned}
 \begin{aligned}
-Каждый объект w_{i} задается значениями признаков x_{j} (j=1..N) \\
+Каждый:объект\:w_{i}\:задается\:значениями\:признаков\:x_{j} (j=1..N) \\
 \end{aligned}
 \begin{aligned}
-I(w)=(x_{1}(w),...,x_{N}(w)) - описание объекта
+I(w)=(x_{1}(w),...,x_{N}(w)) - описание\:объекта
 \end{aligned}
 
 
