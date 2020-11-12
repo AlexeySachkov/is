@@ -91,7 +91,11 @@ I(w)=(x_{1}(w),...,x_{N}(w)) - описание\ объекта
     <th class="tg-0pky" rowspan="2">класс</th>
   </tr>
   <tr>
-    <td class="tg-0pky">x_{1}</td>
+    <td class="tg-0pky">
+        \begin{aligned}
+        x_{1}
+        \end{aligned}
+    </td>
     <td class="tg-0pky">x_{j}</td>
     <td class="tg-0pky">x_{n}</td>
   </tr>
