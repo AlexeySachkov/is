@@ -264,6 +264,12 @@ B=(b_{1},...,b_{N})
 
 ----
 
+1. Количества вертикальных линий (длины 1)
+2. Количество горизонтальных линий
+3. Количество наклонных линий
+
+----
+
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:24px;
@@ -386,3 +392,208 @@ B=(b_{1},...,b_{N})
   </tr>
 </tbody>
 </table>
+
+----
+
+![Numbers](https://imgur.com/a/RLXTAs0)
+
+----
+
+4. Количество горизонтальных линий снизу объекта
+
+----
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax">
+        \begin{aligned}
+        X_{1}
+        \end{aligned}
+    </th>
+    <th class="tg-0lax">
+        \begin{aligned}
+        X_{2}
+        \end{aligned}
+    </th>
+    <th class="tg-0lax">
+        \begin{aligned}
+        X_{3}
+        \end{aligned}
+    </th>
+    <th class="tg-0lax"></th>
+    <th class="tg-0lax"></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">0</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">1</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">2</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">3</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">4</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">5</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">6</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">7</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">8</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">9</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">
+        \begin{aligned}
+        \varepsilon_{1}=1
+        \end{aligned}
+    </td>
+    <td class="tg-0lax">
+        \begin{aligned}
+        \varepsilon_{2}=1
+        \end{aligned}
+    </td>
+    <td class="tg-0lax">
+        \begin{aligned}
+        \varepsilon_{3}=1
+        \end{aligned}
+    </td>
+    <td class="tg-0lax">
+        \begin{aligned}
+        \varepsilon_{4}=1
+        \end{aligned}
+    </td>
+    <td class="tg-0lax"></td>
+  </tr>
+</tbody>
+</table>
+
+----
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:24px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:24px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax">
+        \begin{aligned}
+        X_{1}
+        \end{aligned}
+    </th>
+    <th class="tg-0lax">
+        \begin{aligned}
+        X_{2}
+        \end{aligned}
+    </th>
+    <th class="tg-0lax">
+        \begin{aligned}
+        X_{3}
+        \end{aligned}
+    </th>
+    <th class="tg-0lax">
+        \begin{aligned}
+        X_{4}
+        \end{aligned}
+    </th>
+    <th class="tg-0lax">Объект</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">№1</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">№2</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">№3</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">№4</td>
+  </tr>
+  </tr>
+</tbody>
+</table>
+
+----
+
+![Numbers](https://imgur.com/a/RLXTAs0)
+
+----
+
