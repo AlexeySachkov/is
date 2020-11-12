@@ -593,7 +593,7 @@ B=(b_{1},...,b_{N})
 
 ----
 
-![Numbers](https://i.imgur.com/c3qp7DE.png
+![Numbers](https://i.imgur.com/c3qp7DE.png)
 
 ----
 
