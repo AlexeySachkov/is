@@ -69,7 +69,10 @@ M - множество\ объектов \\
 M = \bigcup \Omega_{i} (i=1..m) \\
 \end{aligned}
 \begin{aligned}
-Каждый\ объект\ w_{i}\ задается\ значениями\ признаков\ x_{j} (j=1..N) \\
+Каждый\ объект\ w_{i}
+\end{aligned}
+\begin{aligned}
+задается\ значениями\ признаков\ x_{j} (j=1..N) \\
 \end{aligned}
 \begin{aligned}
 I(w)=(x_{1}(w),...,x_{N}(w)) - описание\ объекта
@@ -221,8 +224,28 @@ I(w)=(x_{1}(w),...,x_{N}(w)) - описание\ объекта
 </tbody>
 </table>
 </script></section><section data-markdown><script type="text/template">
+Имея описание нового объекта
+\begin{aligned}
+A=(a_{1},...,a_{N})
+\end{aligned}
+И описание какого-то уже существующего объекта
+\begin{aligned}
+B=(b_{1},...,b_{N})
+\end{aligned}
 
+Мы можем попытаться понять, похожи они или нет
+</script></section><section data-markdown><script type="text/template">
+\begin{aligned}
+\varepsilon_{1},...,\varepsilon_{N} - пороги\ несоотвествия\ для\ каждого\ признака
+\end{aligned}
+\begin{aligned}
+q - минимальное\ количество\ признаков,\ которые\ должны\ быть\ близки
+\end{aligned}
 
+Если хотя бы q неравенств выполнаются, то объекты считаются принадлежащими одному классу:
+\begin{aligned}
+\mid a_{i} - b_{i} \mid \eqslantless \varepsilon_{i}, i = (1...N)
+\end{aligned}
 
 
 </script></section></section></div>
