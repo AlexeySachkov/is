@@ -75,7 +75,10 @@ M - множество\ объектов \\
 M = \bigcup \Omega_{i} (i=1..m) \\
 \end{aligned}
 \begin{aligned}
-Каждый\ объект\ w_{i}\ задается\ значениями\ признаков\ x_{j} (j=1..N) \\
+Каждый\ объект\ w_{i}
+\end{aligned}
+\begin{aligned}
+задается\ значениями\ признаков\ x_{j} (j=1..N) \\
 \end{aligned}
 \begin{aligned}
 I(w)=(x_{1}(w),...,x_{N}(w)) - описание\ объекта
