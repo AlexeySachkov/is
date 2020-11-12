@@ -260,7 +260,7 @@ B=(b_{1},...,b_{N})
 
 #### Пример
 
-![Numbers](https://imgur.com/a/RLXTAs0)
+![Numbers](https://i.imgur.com/c3qp7DE.png)
 
 ----
 
@@ -395,7 +395,7 @@ B=(b_{1},...,b_{N})
 
 ----
 
-![Numbers](https://imgur.com/a/RLXTAs0)
+![Numbers](https://i.imgur.com/c3qp7DE.png)
 
 ----
 
@@ -593,7 +593,7 @@ B=(b_{1},...,b_{N})
 
 ----
 
-![Numbers](https://imgur.com/a/RLXTAs0)
+![Numbers](https://i.imgur.com/c3qp7DE.png
 
 ----
 
