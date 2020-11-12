@@ -72,7 +72,7 @@ M - множество\ объектов \\
 \Omega - множество\ классов\ объектов \\
 \end{aligned}
 \begin{aligned}
-M \bigcup \Omega_{i} (i=1..m) \\
+M = \bigcup \Omega_{i} (i=1..m) \\
 \end{aligned}
 \begin{aligned}
 Каждый\ объект\ w_{i}\ задается\ значениями\ признаков\ x_{j} (j=1..N) \\
@@ -83,6 +83,14 @@ I(w)=(x_{1}(w),...,x_{N}(w)) - описание\ объекта
 
 ----
 
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
 <table class="tg">
 <thead>
   <tr>
@@ -96,65 +104,131 @@ I(w)=(x_{1}(w),...,x_{N}(w)) - описание\ объекта
         x_{1}
         \end{aligned}
     </td>
-    <td class="tg-0pky">x_{j}</td>
-    <td class="tg-0pky">x_{n}</td>
+    <td class="tg-0pky">
+        \begin{aligned}
+        x_{j}
+        \end{aligned}
+    </td>
+    <td class="tg-0pky">
+        \begin{aligned}
+        x_{n}
+        \end{aligned}
+    </td>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0pky">w_{1}</td>
-    <td class="tg-0pky">a_{11}</td>
-    <td class="tg-0pky">a_{1j}</td>
-    <td class="tg-0pky">a_{1n}</td>
-    <td class="tg-0pky" rowspan="3">\Omega_{1}</td>
+    <td class="tg-0pky">
+        \begin{aligned}
+        w_{1}
+        \end{aligned}
+    </td>
+    <td class="tg-0pky">
+        \begin{aligned}
+        a_{11}
+        \end{aligned}
+    </td>
+    <td class="tg-0pky">
+        \begin{aligned}
+        a_{1j}
+        \end{aligned}
+    </td>
+    <td class="tg-0pky">
+        \begin{aligned}
+        a_{1n}
+        \end{aligned}
+    </td>
+    <td class="tg-0pky" rowspan="3">
+        \begin{aligned}
+        \Omega_{1}
+        \end{aligned}
+    </td>
   </tr>
   <tr>
     <td class="tg-0pky" colspan="4">...</td>
   </tr>
   <tr>
-    <td class="tg-0pky">w_{h}</td>
-    <td class="tg-0pky">a_{h1}</td>
-    <td class="tg-0pky">a_{hj}</td>
-    <td class="tg-0pky">a_{hn}</td>
+    <td class="tg-0pky">
+        \begin{aligned}
+        w_{h}
+        \end{aligned}
+    </td>
+    <td class="tg-0pky">
+        \begin{aligned}
+        a_{h1}
+        \end{aligned}
+    </td>
+    <td class="tg-0pky">
+        \begin{aligned}
+        a_{hj}
+        \end{aligned}
+    </td>
+    <td class="tg-0pky">
+        \begin{aligned}
+        a_{hn}
+        \end{aligned}
+    </td>
   </tr>
   <tr>
     <td class="tg-0pky" colspan="5">...</td>
   </tr>
   <tr>
-    <td class="tg-0pky">w_{l}</td>
-    <td class="tg-0pky">a_{l1}</td>
-    <td class="tg-0pky">a_{lj}</td>
-    <td class="tg-0pky">a_{ln}</td>
-    <td class="tg-0pky" rowspan="3">\Omega_{M}</td>
+    <td class="tg-0pky">
+        \begin{aligned}
+        w_{l}
+        \end{aligned}
+    </td>
+    <td class="tg-0pky">
+        \begin{aligned}
+        a_{l1}
+        \end{aligned}
+    </td>
+    <td class="tg-0pky">
+        \begin{aligned}
+        a_{lj}
+        \end{aligned}
+    </td>
+    <td class="tg-0pky">
+        \begin{aligned}
+        a_{ln}
+        \end{aligned}
+    </td>
+    <td class="tg-0pky" rowspan="3">
+        \begin{aligned}
+        \Omega_{M}
+        \end{aligned}
+    </td>
   </tr>
   <tr>
     <td class="tg-0pky" colspan="4">...</td>
   </tr>
   <tr>
-    <td class="tg-0pky">w_{k}</td>
-    <td class="tg-0pky">a_{k1}</td>
-    <td class="tg-0pky">a_{kj}</td>
-    <td class="tg-0pky">a_{kn}</td>
+    <td class="tg-0pky">
+        \begin{aligned}
+        w_{k}
+        \end{aligned}
+    </td>
+    <td class="tg-0pky">
+        \begin{aligned}
+        a_{k1}
+        \end{aligned}
+    </td>
+    <td class="tg-0pky">
+        \begin{aligned}
+        a_{kj}
+        \end{aligned}
+    </td>
+    <td class="tg-0pky">
+        \begin{aligned}
+        a_{kn}
+        \end{aligned}
+    </td>
   </tr>
 </tbody>
 </table>
 
 ----
 
-\begin{table}[]
-\begin{tabular}{|l|l|l|l|l|}
-\hline
-\multirow{2}{*}{объект} & \multicolumn{3}{l|}{признаки и значения} & \multirow{2}{*}{класс}                        \\ \cline{2-4}
-                        & x\_\{1\}     & x\_\{j\}    & x\_\{n\}    &                                               \\ \hline
-w\_\{1\}                & a\_\{11\}    & a\_\{1j\}   & a\_\{1n\}   & \multirow{3}{*}{\textbackslash{}Omega\_\{1\}} \\ \cline{1-4}
-\multicolumn{4}{|l|}{...}                                          &                                               \\ \cline{1-4}
-w\_\{h\}                & a\_\{h1\}    & a\_\{hj\}   & a\_\{hn\}   &                                               \\ \hline
-\multicolumn{5}{|l|}{...}                                                                                          \\ \hline
-w\_\{l\}                & a\_\{l1\}    & a\_\{lj\}   & a\_\{ln\}   & \multirow{3}{*}{\textbackslash{}Omega\_\{M\}} \\ \cline{1-4}
-\multicolumn{4}{|l|}{...}                                          &                                               \\ \cline{1-4}
-w\_\{k\}                & a\_\{k1\}    & a\_\{kj\}   & a\_\{kn\}   &                                               \\ \hline
-\end{tabular}
-\end{table}
 
 
 
