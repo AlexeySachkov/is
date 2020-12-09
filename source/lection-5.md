@@ -20,15 +20,6 @@
 
 ----
 
-Тело нейрона выполняет пороговую функцию активации над сигналами пришедшими по входам нейрона - дендритам.
-
-Аксон - способ передачи сигнала дальше другим нейронам.
-
-Синапсы позволяют усилить или ослабить входной сигнал чтобы показаать важность отдельных входных сигналов.
-
-Связи между нейронами называют синапсическими.
-
-----
 
 ### Математическая модель нейрона
 
@@ -39,5 +30,23 @@
 \begin{aligned}
 V_{i} = f(V_{j}, \omega_{j}, h_{j}) \\
 
-f(V_{j}, \omega_{j}, h_{j}) = \sum_j\left{\begin{array}V_{j} * \omega_{j}, if V_{j} * \omega_{j} > h_{j}, \\ 0 otherwise \end{array}
+f(V_{j}, \omega_{j}, h_{j}) = \sum_j k_{j} \\
+
+k_{j} = V_{j} * \omega_{j}, if V_{j} * \omega_{j} > h_{j} or 0 otherwise
+\end{aligned}
+
+----
+
+\begin{aligned}
+V_{i} = f(V_{j}, \omega_{j}, h_{j}) \\
+
+f(V_{j}, \omega_{j}, h_{j}) = \sum_j V_{j} * \omega_{j} - h_{j}
+\end{aligned}
+
+----
+
+\begin{aligned}
+V_{i} = f(V_{j}, \omega_{j}, h_{j}) \\
+
+f(V_{j}, \omega_{j}) = V_0 * \omega_0 + \sum_j V_{j} * \omega_{j}
 \end{aligned}
