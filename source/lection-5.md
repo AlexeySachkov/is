@@ -52,7 +52,7 @@ f(V_{j}, \omega_{j}, h_{j}) = \sum_j V_{j} * \omega_{j} - h_{j}
 V_{i} = f(V_{j}, \omega_{j}, h_{j}) \\
 \end{aligned}
 \begin{aligned}
-f(V_{j}, \omega_{j}) = V_0 * \omega_0 + \sum_j V_{j} * \omega_{j}
+f(V_{j}, \omega_{j}) = V_{0_{j}} * \omega_{0_{j}} + \sum_j V_{j} * \omega_{j}
 \end{aligned}
 
 ----
