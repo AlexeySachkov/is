@@ -54,3 +54,21 @@ V_{i} = f(V_{j}, \omega_{j}, h_{j}) \\
 \begin{aligned}
 f(V_{j}, \omega_{j}) = V_0 * \omega_0 + \sum_j V_{j} * \omega_{j}
 \end{aligned}
+
+----
+
+\begin{aligned}
+D(f) = [0, 1]
+\end{aligned}
+
+----
+
+![image](https://neerc.ifmo.ru/wiki/images/thumb/6/63/Multi-layer-neural-net-scheme.png/500px-Multi-layer-neural-net-scheme.png)
+
+----
+
+![image](http://synset.com/ai/ru/nn/NeuralNet_01_Intro.html)
+
+----
+
+![image](http://synset.com/ai/ru/nn/im/nets02.png)
