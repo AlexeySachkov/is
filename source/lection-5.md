@@ -34,7 +34,7 @@ V_{i} = f(V_{j}, \omega_{j}, h_{j})
 f(V_{j}, \omega_{j}, h_{j}) = \sum_j k_{j} \\
 \end{aligned}
 \begin{aligned}
-k_{j} = V_{j} * \omega_{j}, if V_{j} * \omega_{j} > h_{j} or 0 otherwise
+k_{j} = V_{j} * \omega_{j},\ if\ V_{j} * \omega_{j} > h_{j}\ or\ 0\ otherwise
 \end{aligned}
 
 ----
