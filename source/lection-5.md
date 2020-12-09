@@ -67,7 +67,7 @@ D(f) = [0, 1]
 
 ----
 
-![image](http://synset.com/ai/ru/nn/NeuralNet_01_Intro.html)
+![image](http://synset.com/ai/ru/nn/im/nets01.png)
 
 ----
 
