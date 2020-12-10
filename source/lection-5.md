@@ -28,32 +28,33 @@
 ----
 
 \begin{aligned}
-V_{i} = f(V_{j}, \omega_{j}, h_{j})
+V_{i} = f(\sum_k V_{k} * \omega_{k_{i}}, h_{i})
 \end{aligned}
 \begin{aligned}
-f(V_{j}, \omega_{j}, h_{j}) = \sum_j k_{j} \\
-\end{aligned}
-\begin{aligned}
-k_{j} = V_{j} * \omega_{j},\ if\ V_{j} * \omega_{j} > h_{j}\ or\ 0\ otherwise
+f(Sum, h) = Sum,\ if\ Sum > h\ or\ 0\ otherwise
 \end{aligned}
 
 ----
 
 \begin{aligned}
-V_{i} = f(V_{j}, \omega_{j}, h_{j}) \\
+V_{i} = V_{i} = f(\sum_k V_{k} * \omega_{k_{i}}, h_{i})
 \end{aligned}
 \begin{aligned}
-f(V_{j}, \omega_{j}, h_{j}) = \sum_j V_{j} * \omega_{j} - h_{j}
+f(Sum, h) = \sigma(Sum - h) = \frac{1}{1+e^(Sum - h)}
 \end{aligned}
 
 ----
 
 \begin{aligned}
-V_{i} = f(V_{j}, \omega_{j}, h_{j}) \\
+V_{i} = V_{i} = f(\sum_k V_{k} * \omega_{k_{i}}, h_{i})
 \end{aligned}
 \begin{aligned}
-f(V_{j}, \omega_{j}) = V_{0_{j}} * \omega_{0_{j}} + \sum_j V_{j} * \omega_{j}
+f(Sum, h) = \tanh(Sum - h)
 \end{aligned}
+
+----
+
+![image](https://neurohive.io/wp-content/uploads/2018/07/funkcii-aktivacii-neironnoi-seti-570x257.png)
 
 ----
 
@@ -72,3 +73,21 @@ D(f) = [0, 1]
 ----
 
 ![image](http://synset.com/ai/ru/nn/im/nets02.png)
+
+---
+
+## Обучение и работа нейронной сети
+
+----
+
+### Метод обратного распространения ошибки
+
+----
+
+![image](https://neurohive.io/wp-content/uploads/2018/07/forward-propagation-570x570.png)
+
+----
+
+![image](https://neurohive.io/wp-content/uploads/2018/07/backpropagation-770x372.jpeg)
+
+----
