@@ -75,6 +75,18 @@ f(Sum, h) = \tanh(Sum - h)
 
 ![image](http://synset.com/ai/ru/nn/im/nets02.png)
 
+----
+
+![image](https://intuit.ru/EDI/19_07_20_1/1595110787-29918/tutorial/641/objects/2/files/2-1.jpg)
+
+----
+
+![image](https://intuit.ru/EDI/19_07_20_1/1595110787-29918/tutorial/641/objects/2/files/2-2.jpg)
+
+----
+
+![image](https://intuit.ru/EDI/19_07_20_1/1595110787-29918/tutorial/641/objects/2/files/2-3.jpg)
+
 ---
 
 ## Обучение и работа нейронной сети
@@ -93,3 +105,54 @@ f(Sum, h) = \tanh(Sum - h)
 
 ----
 
+### Виды обучения нейросетей
+
+- обучение с учителем
+- обучение без учителя
+- обучение с подкреплением
+
+----
+
+### Переобучение
+
+Нейронная сеть "запоминает" ответы, вместо того, чтобы искать закономерности.
+
+- регуляризация весов
+- нормализация батчей
+- наращивание обучающей выборки
+
+---
+
+## Виды нейронных сетей
+
+----
+
+### Feed Forward Neural Networks (FFNN)
+
+Нейронные сети прямого распространения
+
+![image](https://s3.tproger.ru/uploads/2016/09/1-3-300x88.png)
+
+----
+
+### Autoencoder (AE)
+
+Автоматическое сжатие информации
+
+![image](https://s3.tproger.ru/uploads/2016/09/7-1-222x300.png)
+
+----
+
+### Convolutional Neural Networks (CNN)
+
+Сверточные нейронные сети
+
+![image](https://s3.tproger.ru/uploads/2016/09/12-1-300x185.png)
+
+----
+
+### Deconvolutional Networks (DN)
+
+Развертывающие нейронные сети
+
+![image](https://s3.tproger.ru/uploads/2016/09/13-297x300.png)
