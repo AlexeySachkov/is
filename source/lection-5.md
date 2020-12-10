@@ -121,7 +121,7 @@ f(Sum, h) = \tanh(Sum - h)
 - нормализация батчей
 - наращивание обучающей выборки
 
----
+----
 
 ### Катастрофическая забывчивость
 
@@ -163,3 +163,33 @@ f(Sum, h) = \tanh(Sum - h)
 Развертывающие нейронные сети
 
 ![image](https://s3.tproger.ru/uploads/2016/09/13-297x300.png)
+
+---
+
+## Средства для работы с нейронными сетями
+
+----
+
+### Tensorflow
+
+An end-to-end open source machine learning platform
+
+- https://www.tensorflow.org/
+
+![image](https://miro.medium.com/max/700/1*e9sg7-4A6rCAsUek_VAgSA.gif)
+
+----
+
+### Keras
+
+Simple. Flexible. Powerful. Deep learning for humans.
+
+- https://keras.io/
+
+----
+
+### PyTorch
+
+FROM RESEARCH TO PRODUCTION
+
+- https://pytorch.org/
