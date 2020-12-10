@@ -27,26 +27,33 @@
 
 ----
 
+
 \begin{aligned}
-V_{i} = f(\sum_k V_{k} * \omega_{k_{i}}, h_{i})
-\end{aligned}
-\begin{aligned}
-f(Sum, h) = Sum,\ if\ Sum > h\ or\ 0\ otherwise
+D(f) = [0, 1]
 \end{aligned}
 
 ----
 
 \begin{aligned}
-V_{i} = V_{i} = f(\sum_k V_{k} * \omega_{k_{i}}, h_{i})
+V_{i} = f(\sum_k V_{k} * \omega_{ik}, h_{i})
 \end{aligned}
 \begin{aligned}
-f(Sum, h) = \sigma(Sum - h) = \frac{1}{1+e^(Sum - h)}
+f(Sum, h) = 1,\ if\ Sum > h\ or\ 0\ otherwise
 \end{aligned}
 
 ----
 
 \begin{aligned}
-V_{i} = V_{i} = f(\sum_k V_{k} * \omega_{k_{i}}, h_{i})
+V_{i} = V_{i} = f(\sum_k V_{k} * \omega_{ik}, h_{i})
+\end{aligned}
+\begin{aligned}
+f(Sum, h) = \sigma(Sum - h) = \frac{1}{1+e^{Sum - h}}
+\end{aligned}
+
+----
+
+\begin{aligned}
+V_{i} = V_{i} = f(\sum_k V_{k} * \omega_{ik}, h_{i})
 \end{aligned}
 \begin{aligned}
 f(Sum, h) = \tanh(Sum - h)
@@ -55,12 +62,6 @@ f(Sum, h) = \tanh(Sum - h)
 ----
 
 ![image](https://neurohive.io/wp-content/uploads/2018/07/funkcii-aktivacii-neironnoi-seti-570x257.png)
-
-----
-
-\begin{aligned}
-D(f) = [0, 1]
-\end{aligned}
 
 ----
 
@@ -91,3 +92,4 @@ D(f) = [0, 1]
 ![image](https://neurohive.io/wp-content/uploads/2018/07/backpropagation-770x372.jpeg)
 
 ----
+
